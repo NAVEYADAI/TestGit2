@@ -78,7 +78,7 @@ public class ConnectPGDB {
     public void select(){
         String sqlSelect = "SELECT  * FROM name";
         try {
-            Statement statement=connection.createStatement();
+            Statement statement= connection.createStatement();
             ResultSet result = statement.executeQuery(sqlSelect);
             while (result.next()){
                 name r=new name(result.getInt("id")

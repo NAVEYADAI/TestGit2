@@ -6,7 +6,12 @@ package org.example;
 public class Main {
     public static void main(String[] args) {
         System.out.println("Hello world!");
-       System.out.println("ORIMERHAVI");
+        ConnectPGDB connectPGDB;
+        connectPGDB = new ConnectPGDB();
+        connectPGDB.upPGDB("testing","nave","1234");
+        connectPGDB.select();
+        connectPGDB.closeConnect();
+
         int f=0;
     }
 }

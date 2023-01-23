@@ -10,7 +10,7 @@ import java.sql.*;
 public class ConnectPGDB {
     private Connection connection;
     public void upPGDB(String nameOfDB , String userName, String password){
-        String jdbcURL = "jdbc:postgresql://localhost:5432/"+nameOfDB;
+        String jdbcURL = "jdbc:postgresql://localhost:5432/testing";
         try {
             this.connection = DriverManager.getConnection(jdbcURL,userName,password);
             System.out.println("\nnconnect is working\n");

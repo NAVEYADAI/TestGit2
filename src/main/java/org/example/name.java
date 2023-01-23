@@ -17,6 +17,11 @@ public class name {
         this.l_name = l_name;
     }
 
+    public name(String f_name, String l_name) {
+        this.f_name = f_name;
+        this.l_name = l_name;
+    }
+
     public name() {
     }
 
